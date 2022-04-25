@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 style="text-align:center;">Lista de alunos esperando por grupo</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- <a href="/add">Adicionar estudantes</a> -->
+            </div>
+            <div class="col-xs-12">
+                <table class="table">
+                    <theah>
+                        <tr>
+                            <th>Nome</th>
+                            <th>RA</th>
+                            <th>Curso</th>
+                            <th>Polo</th>
+                            <th>Projeto Integrador</th>
+                            <th>Interesse Acadêmico</th>
+                            <th>Idioma</th>
+                            <th>Dia livre</th>
+                            <th>Período livre</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Rede Social</th>
+                            <th>Hobby</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for e in estudantes %}
+                        <tr>
+                            <td>{{e.nome}}</td>
+                            <td>{{e.ra}}</td>
+                            <td>{{e.curso}}</td>
+                            <td>{{e.polo}}</td>
+                            <td>{{e.pi}}</td>
+                            <td>{{e.interesse_academico}}</td>
+                            <td>{{e.idioma}}</td>
+                            <td>{{e.semana}}</td>
+                            <td>{{e.periodo}}</td>
+                            <td>{{e.telefone}}</td>
+                            <td>{{e.email_alternativo}}</td>
+                            <td>{{e.rede_social}}</td>
+                            <td>{{e.hobby}}</td>
+                            <td>
+                                <!--<a href="/edit/{{e.id}}">Editar</a>-->
+                                <!--<a href="/delete/{{e.id}}">Excluir</a>-->
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+ID	SENHA	NOME	RA	CURSO	POLO	PI	INTERESSE_ACADEMICO	HOBBY	TRABALHA	IDIOMA	TELEFONE	EMAIL_ALTERNATIVO	REDE_SOCIAL	HORARIO_LIVRE	DIA_PARA_REUNIAO
+int	string	strring	int	string	string	int	string			string	bool		string	string		string			string		hora		data
