@@ -64,9 +64,16 @@ Como funciona hoje o sistema de formação de grupos pela UNIVESP.
 1. _Para parar a execução do servidor_ CTRL+C
 
 ## Versionamento de código com Git/GitHub
-
+1. Plugin do próprio Visual Studio code
+2. Necessita login no git para confirmar acesso pelo VSCode
+3. Setar a variável debug=False
+4. No powershell $env:FLASH_DEBUG=0
+4. No powershell $env:FLASH_APP="pi2"
 ## Usando Heroku para colocar o aplicativo na internet
-
+1. Confirmar que enviu o diretório para o git
+1. Digitar o comando: heroku login
+1. digitar o comando: heroku git:clone -a pi2aplicativoweb
+1. Digitar o comando: git push heroku master
 # REFERÊNCIAS
 ## Referências Sites das Ferramentas
 1. https://flask.palletsprojects.com/en/2.1.x/
